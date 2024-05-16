@@ -33,8 +33,10 @@ def main():
                                                  tcp, udp))
         if result == 0:
             st.error('You have risk of network threat')
-        else if result == 1:
+        elif result == 1:
             st.success("You don't have risk of network threat")
+        else:
+            st.warning("WARNING!")
 
 if __name__ == '__main__':
     main()
