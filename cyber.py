@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 import streamlit as st
 from PIL import Image
+import time
 
 
 st.subheader('Analysis of network threat')
