@@ -32,9 +32,9 @@ def main():
         result = int(predict_note_authentication(packet_length, num_packets, icmp,
                                                  tcp, udp))
         if result == 0:
-            st.success('You have risk of network threat').markdown(f'<p style="background-color:#FF0000')
+            st.error('You have risk of network threat')
         else if result == 1:
-            st.success('You don't have risk of network threat').markdown(f'<p style="background-color:#00FF00')
+            st.success('You don't have risk of network threat')
 
 if __name__ == '__main__':
     main()
