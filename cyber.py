@@ -32,8 +32,12 @@ def main():
         result = int(predict_note_authentication(packet_length, num_packets, icmp,
                                                  tcp, udp))
         if result == 0:
+            with st.spinner('Wait for it...'):
+            time.sleep(5)
             st.error('You have risk of network threat')
         elif result == 1:
+            with st.spinner('Wait for it...'):
+            time.sleep(5)
             st.success("You don't have risk of network threat")
         else:
             st.warning("WARNING!")
