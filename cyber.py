@@ -33,11 +33,11 @@ def main():
                                                  tcp, udp))
         if result == 0:
             with st.spinner('Wait for it...'):
-              time.sleep(5)
+                time.sleep(5)
             st.error('You have risk of network threat')
         elif result == 1:
             with st.spinner('Wait for it...'):
-              time.sleep(5)
+                time.sleep(5)
             st.success("You don't have risk of network threat")
         else:
             st.warning("WARNING!")
