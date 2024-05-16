@@ -34,7 +34,7 @@ def main():
         if result == 0:
             st.error('You have risk of network threat')
         else if result == 1:
-            st.success('You don't have risk of network threat')
+            st.success("You don't have risk of network threat")
 
 if __name__ == '__main__':
     main()
