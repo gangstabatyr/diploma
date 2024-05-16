@@ -40,7 +40,7 @@ def main():
                 time.sleep(2)
             st.success("You don't have risk of network threat")
         else:
-            st.warning("WARNING!")
+            st.warning("WARNING!!! CODE RED!")
 
 if __name__ == '__main__':
     main()
